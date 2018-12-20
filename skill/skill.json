@@ -1,0 +1,256 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "マストドン",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "エンド",
+                        "フィニッシュ",
+                        "やめよう",
+                        "やめて",
+                        "ストップ",
+                        "もう大丈夫",
+                        "さいなら",
+                        "さよなら",
+                        "もういいよ",
+                        "やめた",
+                        "おしまい",
+                        "終了"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GreetingTootIntent",
+                    "slots": [
+                        {
+                            "name": "greeting",
+                            "type": "greeting"
+                        }
+                    ],
+                    "samples": [
+                        "{greeting} の挨拶するよ",
+                        "{greeting} の挨拶",
+                        "{greeting} と挨拶して",
+                        "{greeting} する",
+                        "{greeting} したい",
+                        "{greeting}"
+                    ]
+                },
+                {
+                    "name": "TimeLineIntent",
+                    "slots": [
+                        {
+                            "name": "timeline",
+                            "type": "timeline_name"
+                        }
+                    ],
+                    "samples": [
+                        "{timeline} どうかな",
+                        "{timeline} どう",
+                        "{timeline} どうよ",
+                        "{timeline} 知りたいんだけど",
+                        "{timeline} 知りたい",
+                        "{timeline} どうなってる",
+                        "{timeline} 読みたい",
+                        "{timeline} 読んで",
+                        "{timeline} 聞くよ",
+                        "{timeline} 聞かせて",
+                        "{timeline} 聞きたい",
+                        "{timeline} 見たい",
+                        "{timeline} 開いて",
+                        "{timeline}"
+                    ]
+                },
+                {
+                    "name": "NotificationIntent",
+                    "slots": [
+                        {
+                            "name": "notification",
+                            "type": "notification"
+                        }
+                    ],
+                    "samples": [
+                        "{notification} どうなん",
+                        "{notification} ある",
+                        "{notification} 来てる",
+                        "{notification} どうなってる",
+                        "{notification} 教えて",
+                        "{notification} を教えて",
+                        "{notification}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "リピートして",
+                        "次",
+                        "リピート",
+                        "繰り返す",
+                        "繰り返して",
+                        "まだまだ",
+                        "もいっかい",
+                        "もう一回",
+                        "もう一度"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "greeting",
+                    "values": [
+                        {
+                            "id": "GoodNight",
+                            "name": {
+                                "value": "おやすみなさい",
+                                "synonyms": [
+                                    "Good Night",
+                                    "ぐない",
+                                    "おやすみー",
+                                    "おやすみ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GoodBye",
+                            "name": {
+                                "value": "さようなら",
+                                "synonyms": [
+                                    "お疲れ様でした",
+                                    "お元気で",
+                                    "また明日",
+                                    "Good Bye",
+                                    "Bye",
+                                    "また今度",
+                                    "失礼します",
+                                    "またね",
+                                    "ばいばい"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GoodEvening",
+                            "name": {
+                                "value": "こんばんは",
+                                "synonyms": [
+                                    "Good Evening",
+                                    "こばわ",
+                                    "おばんです"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Hello",
+                            "name": {
+                                "value": "こんにちは",
+                                "synonyms": [
+                                    "つぶやき",
+                                    "つぶやいて",
+                                    "つぶやく",
+                                    "Good Afternoon",
+                                    "Hello ",
+                                    "おっす",
+                                    "どもー",
+                                    "ちわ"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "GoodMorning",
+                            "name": {
+                                "value": "おはようございます",
+                                "synonyms": [
+                                    "Good Morning",
+                                    "おはよっす",
+                                    "おはよう"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "timeline_name",
+                    "values": [
+                        {
+                            "id": "LocalTimeLine",
+                            "name": {
+                                "value": "ローカルタイムライン",
+                                "synonyms": [
+                                    "エルティーエル",
+                                    "Local",
+                                    "LTL",
+                                    "ローカル"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "HomeTimeLine",
+                            "name": {
+                                "value": "ホームタイムライン",
+                                "synonyms": [
+                                    "エイチティーエル",
+                                    "ティーエル",
+                                    "TL",
+                                    "タイムライン",
+                                    "HTL",
+                                    "Home",
+                                    "ホーム"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "notification",
+                    "values": [
+                        {
+                            "id": "Notice",
+                            "name": {
+                                "value": "通知",
+                                "synonyms": [
+                                    "Notification",
+                                    "Notice"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "DirectMail",
+                            "name": {
+                                "value": "ダイレクトメール",
+                                "synonyms": [
+                                    "メール",
+                                    "ディーエム",
+                                    "ダイレクトメール",
+                                    "Direct Mail",
+                                    "DM"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "Mention",
+                            "name": {
+                                "value": "メンション",
+                                "synonyms": [
+                                    "言及",
+                                    "mention"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
